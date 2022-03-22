@@ -12,9 +12,10 @@ const Modal = ({ onClose, currentPhoto }) => {
 					alt="current category"
 				/>
 				<p>{description}</p>
-				<a href="${deployed}">{deployed}</a>
+				<a href={deployed}>Deployed Application</a>
 				<br />
-				<a>{github}</a>
+				<a href={github}> Github</a>
+				<br />
 				<br />
 				<button type="button" onClick={onClose}>
 					Close this modal

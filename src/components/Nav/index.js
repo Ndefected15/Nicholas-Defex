@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
+import resume from '../../assets/Nicholas_Defex_Resume.pdf';
 
 function Nav(props) {
 	const {
@@ -58,6 +59,15 @@ function Nav(props) {
 							</span>
 						</li>
 					))}
+					<li className="mx-2">
+						<a
+							data-testid="resume"
+							href={resume}
+							download="Nicholas_Defex_Resume"
+						>
+							Resume
+						</a>
+					</li>
 				</ul>
 			</nav>
 		</header>
