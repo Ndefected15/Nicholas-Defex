@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/React-Portfolio-Challenge/static/css/main.07d24ee4.chunk.css",
-    "main.js": "/React-Portfolio-Challenge/static/js/main.5ce5bd14.chunk.js",
-    "main.js.map": "/React-Portfolio-Challenge/static/js/main.5ce5bd14.chunk.js.map",
+    "main.js": "/React-Portfolio-Challenge/static/js/main.2deabc68.chunk.js",
+    "main.js.map": "/React-Portfolio-Challenge/static/js/main.2deabc68.chunk.js.map",
     "runtime-main.js": "/React-Portfolio-Challenge/static/js/runtime-main.aa0ebfff.js",
     "runtime-main.js.map": "/React-Portfolio-Challenge/static/js/runtime-main.aa0ebfff.js.map",
     "static/js/2.75904d14.chunk.js": "/React-Portfolio-Challenge/static/js/2.75904d14.chunk.js",
@@ -19,13 +19,13 @@
     "static/media/4.png": "/React-Portfolio-Challenge/static/media/4.cb5b26bb.png",
     "static/media/5.png": "/React-Portfolio-Challenge/static/media/5.e1bf14fc.png",
     "static/media/6.png": "/React-Portfolio-Challenge/static/media/6.6ccbb730.png",
-    "static/media/Nicholas_Defex_Resume.68483eeb.pdf": "/React-Portfolio-Challenge/static/media/Nicholas_Defex_Resume.68483eeb.pdf",
+    "static/media/Nicholas_Defex_Resume.74ed5caf.pdf": "/React-Portfolio-Challenge/static/media/Nicholas_Defex_Resume.74ed5caf.pdf",
     "static/media/cover-image.c9886623.jpg": "/React-Portfolio-Challenge/static/media/cover-image.c9886623.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.aa0ebfff.js",
     "static/js/2.75904d14.chunk.js",
     "static/css/main.07d24ee4.chunk.css",
-    "static/js/main.5ce5bd14.chunk.js"
+    "static/js/main.2deabc68.chunk.js"
   ]
 }
