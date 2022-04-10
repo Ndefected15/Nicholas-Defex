@@ -7,6 +7,14 @@ const PhotoList = ({ category }) => {
 
 	const [photos] = useState([
 		{
+			name: 'Easy Res',
+			category: 'portfolio',
+			description:
+				'An online restaurant reservation service similar to Open Table or Resy. Users can find their favortie restaurants on Easy Res, select their reservation time, and how many people are in their party.',
+			deployed: 'https://easy-res-v2.herokuapp.com/',
+			github: 'https://github.com/robjameva/easy-res-v2',
+		},
+		{
 			name: 'MCU Countdown Clock',
 			category: 'portfolio',
 			description:
