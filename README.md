@@ -23,7 +23,7 @@ Clone this repo, and ensure you have node downloaded and installed on your machi
 
 ## Usage:
 
-[Visit this link to view the site](https://ndefected15.github.io/React-Portfolio-Challenge/)
+[Visit this link to view the site](http://nicholasdefex.dev/)
 
 ![image](https://user-images.githubusercontent.com/92278942/159574764-a31c0bf0-1313-44ae-b9a7-afb88aa277c6.png)
 
