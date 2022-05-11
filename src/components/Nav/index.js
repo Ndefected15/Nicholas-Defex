@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
-import resume from '../../';
+import resume from '../../assets';
 
 function Nav(props) {
 	const {
