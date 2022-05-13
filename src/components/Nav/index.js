@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
-import resume from '../../assets/';
+import resume from '../../assets/Nicholas_Defex_Resume_2022.pdf';
 
 function Nav(props) {
 	const {
@@ -63,7 +63,7 @@ function Nav(props) {
 						<a
 							data-testid="resume"
 							href={resume}
-							download="Nicholas_Defex_Resume"
+							download="Nicholas_Defex_Resume_2022.pdf"
 						>
 							Resume
 						</a>
