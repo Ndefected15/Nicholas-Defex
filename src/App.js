@@ -4,6 +4,8 @@ import About from './components/About';
 import Gallery from './components/Gallery';
 import ContactForm from './components/Contact';
 
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+
 function App() {
 	const [categories] = useState([
 		{
@@ -17,36 +19,43 @@ function App() {
 	const [contactSelected, setContactSelected] = useState(false);
 
 	return (
-		<div>
-			<Nav
-				categories={categories}
-				setCurrentCategory={setCurrentCategory}
-				currentCategory={currentCategory}
-				contactSelected={contactSelected}
-				setContactSelected={setContactSelected}
-			></Nav>
-			<main>
-				{!contactSelected ? (
-					<>
-						<Gallery currentCategory={currentCategory}></Gallery>
-						<About></About>
-					</>
-				) : (
-					<ContactForm></ContactForm>
-				)}
-			</main>
-			<footer>
-				<a href="https://github.com/Ndefected15">Github</a>
-				<br />
-				<a href="https://www.linkedin.com/in/nicholas-defex-7634a41b4/">
-					LinkedIn
-				</a>
-				<br />
-				<a href="https://stackoverflow.com/users/17122731/ndefected15">
-					StackOverflow
-				</a>
-			</footer>
-		</div>
+		<Router>
+			<div>
+				<Nav
+					categories={categories}
+					setCurrentCategory={setCurrentCategory}
+					currentCategory={currentCategory}
+					contactSelected={contactSelected}
+					setContactSelected={setContactSelected}
+				></Nav>
+				<main>
+					{/* {!contactSelected ? (
+						<>
+							
+							<About></About>
+						</>
+					) : (
+						<ContactForm></ContactForm>
+					)} */}
+					<Gallery currentCategory={currentCategory}></Gallery>
+					<Routes>
+						<Route path="/about" element={<About />}></Route>
+						<Route path="/contact" element={<ContactForm />}></Route>
+					</Routes>
+				</main>
+				<footer>
+					<a href="https://github.com/Ndefected15">Github</a>
+					<br />
+					<a href="https://www.linkedin.com/in/nicholas-defex-7634a41b4/">
+						LinkedIn
+					</a>
+					<br />
+					<a href="https://stackoverflow.com/users/17122731/ndefected15">
+						StackOverflow
+					</a>
+				</footer>
+			</div>
+		</Router>
 	);
 }
 

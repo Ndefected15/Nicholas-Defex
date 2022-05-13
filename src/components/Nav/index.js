@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 import resume from '../../assets/Nicholas_Defex_Resume_2022.pdf';
+import { Link } from 'react-router-dom';
 
 function Nav(props) {
 	const {
@@ -8,7 +9,6 @@ function Nav(props) {
 		setCurrentCategory,
 		contactSelected,
 		currentCategory,
-		setContactSelected,
 	} = props;
 
 	useEffect(() => {
@@ -29,16 +29,10 @@ function Nav(props) {
 			<nav>
 				<ul className="flex-row">
 					<li className="mx-2">
-						<a
-							data-testid="about"
-							href="#about"
-							onClick={() => setContactSelected(false)}
-						>
-							About me
-						</a>
+						<Link to="/about">About me</Link>
 					</li>
-					<li className={`mx-2 ${contactSelected && 'navActive'}`}>
-						<span onClick={() => setContactSelected(true)}>Contact</span>
+					<li className={`mx-2 ${'navActive'}`}>
+						<Link to={'/contact'}>Contact me</Link>
 					</li>
 					{categories.map((category) => (
 						<li
@@ -52,7 +46,6 @@ function Nav(props) {
 							<span
 								onClick={() => {
 									setCurrentCategory(category);
-									setContactSelected(false);
 								}}
 							>
 								{capitalizeFirstLetter(category.name)}
