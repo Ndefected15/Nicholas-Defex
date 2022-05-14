@@ -13,10 +13,12 @@ function About() {
 			/>
 			<div className="my-2">
 				<p>
-					Hello, I am an aspiring Web Devloper. I attended a coding bootcamp
-					through Rutgers University from Oct. 2021 - April 2022. My interests
-					are Music, Technology, Nature and Working where I can to better myself
-					and the world around me.
+					Solution-oriented Full Stack Web Developer known as a diligent
+					collaborative problem solver. Worked with multiple teams of 3 to
+					create an e-commerce site as well as a blog focused site dedicated to
+					displaying the release dates of Marvel films. Eager to become familiar
+					in the world of web development and to continue to grow from the work
+					to be done.
 				</p>
 			</div>
 		</section>

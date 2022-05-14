@@ -4,7 +4,7 @@ import About from './components/About';
 import Gallery from './components/Gallery';
 import ContactForm from './components/Contact';
 
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
 	const [categories] = useState([
@@ -37,10 +37,14 @@ function App() {
 					) : (
 						<ContactForm></ContactForm>
 					)} */}
-					<Gallery currentCategory={currentCategory}></Gallery>
+					{/* <Gallery currentCategory={currentCategory} ></Gallery> */}
 					<Routes>
 						<Route path="/about" element={<About />}></Route>
 						<Route path="/contact" element={<ContactForm />}></Route>
+						<Route
+							path="/gallery"
+							element={<Gallery currentCategory={currentCategory} />}
+						></Route>
 					</Routes>
 				</main>
 				<footer>
