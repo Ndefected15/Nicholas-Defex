@@ -15,7 +15,7 @@
 
 ## Description:
 
-A professional deployeed react portfolio of work samples
+A professional deployed react portfolio of work samples
 
 ## Installation:
 
