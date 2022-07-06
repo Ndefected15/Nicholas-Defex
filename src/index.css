@@ -3,6 +3,14 @@ main {
 	max-width: 90%;
 	padding: 50px 30px;
 }
+
+.centered {
+	/* height: 100vh; Magic here */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 :root {
 	--primary: #9fc1db;
 	--secondary: #e5e5e5;
@@ -90,10 +98,13 @@ a:hover {
 
 header {
 	background: var(--dark);
+	position: sticky;
+	top: 0px;
 }
 
 header a {
 	color: var(--light);
+	position: sticky;
 }
 
 button {
@@ -118,7 +129,7 @@ button[disabled] {
 }
 
 img {
-	max-width: 100%;
+	max-width: 50%;
 }
 
 span[role='img'] {
