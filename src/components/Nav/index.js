@@ -18,7 +18,7 @@ function Nav(props) {
 	return (
 		<header className="flex-row px-1">
 			<h2>
-				<Link to={'/gallery'}>
+				<Link to={'/portfolio'}>
 					<span role="img" aria-label="computer">
 						{' '}
 						💻
@@ -29,7 +29,7 @@ function Nav(props) {
 			<nav>
 				<ul className="flex-row">
 					<li className={`mx-2 ${'navActive'}`}>
-						<Link to={'/gallery'}>Portfolio</Link>
+						<Link to={'/portfolio'}>Portfolio</Link>
 					</li>
 					<li className="mx-2">
 						<Link to="/about">About me</Link>

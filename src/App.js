@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Nav from './components/Nav';
 import About from './components/About';
-import Gallery from './components/Gallery';
+import Portfolio from './components/Portfolio';
 import ContactForm from './components/Contact';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -42,8 +42,12 @@ function App() {
 						<Route path="/about" element={<About />}></Route>
 						<Route path="/contact" element={<ContactForm />}></Route>
 						<Route
-							path="/gallery"
-							element={<Gallery currentCategory={currentCategory} />}
+							path="/portfolio"
+							element={<Portfolio currentCategory={currentCategory} />}
+						></Route>
+						<Route
+							path="/"
+							element={<Portfolio currentCategory={currentCategory} />}
 						></Route>
 					</Routes>
 				</main>
