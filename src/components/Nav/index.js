@@ -2,7 +2,8 @@ import React from 'react';
 // import { capitalizeFirstLetter } from '../../utils/helpers';
 import resume from '../../assets/Nicholas_Defex_Resume_2022.pdf';
 import { Link } from 'react-router-dom';
-
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 function Nav(props) {
 	// const {
 	// 	categories = [],
@@ -18,7 +19,7 @@ function Nav(props) {
 	return (
 		<header className="flex-row px-1">
 			<h2>
-				<Link to={'/portfolio'}>
+				<Link to={'/'}>
 					<span role="img" aria-label="computer">
 						{' '}
 						💻
@@ -65,6 +66,35 @@ function Nav(props) {
 							Resume
 						</a>
 					</li>
+					<li className="mx-2">
+						<a
+							href="https://github.com/Ndefected15"
+							rel="noreferrer"
+							target="_blank"
+						>
+							<GitHubIcon />
+						</a>
+					</li>
+					<li className="mx-2">
+						<a
+							href="https://www.linkedin.com/in/nicholas-defex-7634a41b4/"
+							rel="noreferrer"
+							target="_blank"
+						>
+							<LinkedInIcon />
+						</a>
+					</li>
+
+					{/* To Add More Icons On Nav */}
+					{/* <li className="mx-2">
+						<a
+							href="https://stackoverflow.com/users/17122731/ndefected15"
+							rel="noreferrer"
+							target="_blank"
+						>
+							<LinkedInIcon />
+						</a>
+					</li> */}
 				</ul>
 			</nav>
 		</header>

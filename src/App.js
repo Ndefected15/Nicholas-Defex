@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Home from './components/Home';
 import Nav from './components/Nav';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
@@ -47,7 +48,7 @@ function App() {
 						></Route>
 						<Route
 							path="/"
-							element={<Portfolio currentCategory={currentCategory} />}
+							element={<Home currentCategory={currentCategory} />}
 						></Route>
 					</Routes>
 				</main>
