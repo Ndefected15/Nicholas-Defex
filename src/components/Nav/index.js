@@ -30,11 +30,14 @@ function Nav(props) {
 			<nav>
 				<ul className="flex-row">
 					<li className={`mx-2 ${'navActive'}`}>
+						<Link to={'/'}>Home</Link>
+					</li>
+					<li className={`mx-2 ${'navActive'}`}>
 						<Link to={'/portfolio'}>Portfolio</Link>
 					</li>
-					<li className="mx-2">
+					{/* <li className="mx-2">
 						<Link to="/about">About me</Link>
-					</li>
+					</li> */}
 					<li className={`mx-2 ${'navActive'}`}>
 						<Link to={'/contact'}>Contact me</Link>
 					</li>
