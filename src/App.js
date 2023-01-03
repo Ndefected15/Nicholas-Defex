@@ -10,7 +10,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
 	const [loading, setLoading] = useState(false);
-	// let [color, setColor] = useState('#ffffff');
 
 	useEffect(() => {
 		setLoading(true);
@@ -19,7 +18,14 @@ function App() {
 		}, 2000);
 	}, []);
 
-	// const [currentCategory, setCurrentCategory] = useState(categories[0]);
+	const [categories] = useState([
+		{
+			name: 'portfolio',
+			description: 'Applications worked on',
+		},
+	]);
+
+	const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
 	// const [contactSelected, setContactSelected] = useState(false);
 
@@ -41,11 +47,11 @@ function App() {
 				<Router>
 					<div>
 						<Nav
-						// categories={categories}
-						// setCurrentCategory={setCurrentCategory}
-						// currentCategory={currentCategory}
-						// contactSelected={contactSelected}
-						// setContactSelected={setContactSelected}
+							// categories={categories}
+							setCurrentCategory={setCurrentCategory}
+							currentCategory={currentCategory}
+							// contactSelected={contactSelected}
+							// setContactSelected={setContactSelected}
 						></Nav>
 						<main>
 							{/* {!contactSelected ? (
@@ -60,7 +66,10 @@ function App() {
 							<Routes>
 								<Route path="/about" element={<About />}></Route>
 								<Route path="/contact" element={<ContactForm />}></Route>
-								<Route path="/portfolio" element={<Portfolio />}></Route>
+								<Route
+									path="/portfolio"
+									element={<Portfolio currentCategory={currentCategory} />}
+								></Route>
 								<Route path="/" element={<Home />}></Route>
 							</Routes>
 						</main>
