@@ -1,11 +1,19 @@
 import React from 'react';
 import { Player } from '@lottiefiles/react-lottie-player';
 import Dev from '../../assets/lotties/Developer.json';
+import Waves from '../../assets/lotties/Waves.json';
 
 function Home() {
 	return (
 		<section className="my-5">
 			<h1 id="about" className="centered">
+				<Player
+					src={Waves}
+					className="player"
+					autoplay
+					loop={true}
+					style={{ height: '300px', width: '1744.79px', position: 'absolute' }}
+				/>
 				Who is Nicholas Defex
 				<div class="flex-row">
 					<Player
