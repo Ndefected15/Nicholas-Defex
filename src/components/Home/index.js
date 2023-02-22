@@ -7,7 +7,7 @@ function Home() {
 		<section className="my-5">
 			<h1 id="about" className="centered">
 				Who is Nicholas Defex
-				<div className="container">
+				<div class="flex-row">
 					<Player
 						src={Dev}
 						className="player"

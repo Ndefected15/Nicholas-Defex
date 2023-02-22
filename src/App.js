@@ -73,17 +73,6 @@ function App() {
 								<Route path="/" element={<Home />}></Route>
 							</Routes>
 						</main>
-						<footer>
-							<a href="https://github.com/Ndefected15">Github</a>
-							<br />
-							<a href="https://www.linkedin.com/in/nicholas-defex-7634a41b4/">
-								LinkedIn
-							</a>
-							<br />
-							<a href="https://stackoverflow.com/users/17122731/ndefected15">
-								StackOverflow
-							</a>
-						</footer>
 					</div>
 				</Router>
 			)}
