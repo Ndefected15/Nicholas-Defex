@@ -5,20 +5,20 @@ import Waves from '../../assets/lotties/Waves.json';
 
 function Home() {
 	return (
-		<section className="my-5">
+		<section className="my-1">
 			<h1 id="about" className="centered">
+				<div class="name">Who is Nicholas Defex</div>
 				<Player
 					src={Waves}
-					className="player"
+					className="wave"
 					autoplay
 					loop={true}
-					style={{ height: '300px', width: '1744.79px', position: 'absolute' }}
+					style={{ margin: '0 0 0 0' }}
 				/>
-				Who is Nicholas Defex
 				<div class="flex-row">
 					<Player
 						src={Dev}
-						className="player"
+						className="dev"
 						autoplay
 						style={{ height: '300px', width: '300px' }}
 					/>
@@ -27,7 +27,7 @@ function Home() {
 			<div className="centered">
 				{/* <img src={coverImage} className="my-2" alt="cover" /> */}
 			</div>
-			<div className="my-2">
+			<div className="my-5">
 				<p>
 					Solution-oriented Full Stack Web Developer known as a diligent
 					collaborative problem solver. Worked with multiple teams of 3 to

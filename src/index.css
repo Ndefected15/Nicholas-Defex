@@ -13,11 +13,26 @@ main {
 	height: 100vh;
 }
 
+.wave {
+	display: flex;
+	justify-content: center;
+	position: center;
+
+	z-index: -1;
+}
+
 .centered {
 	/* height: 100vh; Magic here */
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.name {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 200px;
+	padding-left: 50px;
 }
 
 :root {
