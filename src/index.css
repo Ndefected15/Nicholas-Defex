@@ -15,10 +15,15 @@ main {
 
 .wave {
 	display: flex;
-	justify-content: center;
-	position: center;
-
+	width: 100%;
+	height: 100%;
+	/* justify-content: center; */
+	position: absolute;
 	z-index: -1;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .centered {
@@ -33,6 +38,7 @@ main {
 	justify-content: center;
 	padding-bottom: 200px;
 	padding-left: 50px;
+	z-index: 100%;
 }
 
 :root {
