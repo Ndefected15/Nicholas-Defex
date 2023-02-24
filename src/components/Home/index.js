@@ -6,15 +6,25 @@ import Waves from '../../assets/lotties/Waves.json';
 function Home() {
 	return (
 		<section className="my-1">
-			<h1 id="about" className="centered">
+			<div className="wave" style={{ zIndex: -1 }}>
+				<Player src={Waves} autoplay loop={true} />
+			</div>
+			<h1
+				id="about"
+				className="centered"
+				style={{ paddingBottom: '150px', paddingLeft: '100px' }}
+			>
 				<div class="name">Who is Nicholas Defex</div>
-				<Player src={Waves} className="wave" autoplay loop={true} />
-				<div class="flex-row">
+
+				<div>
 					<Player
 						src={Dev}
-						className="dev"
 						autoplay
-						style={{ height: '300px', width: '300px' }}
+						style={{
+							width: '70%',
+							height: '100%',
+							margin: '1',
+						}}
 					/>
 				</div>
 			</h1>
