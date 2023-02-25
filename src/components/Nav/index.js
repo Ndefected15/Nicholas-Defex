@@ -4,6 +4,8 @@ import resume from '../../assets/Nicholas_Defex_Resume_2022.pdf';
 import { Link } from 'react-router-dom';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import '../Nav/Nav.css';
+
 function Nav(props) {
 	// const {
 	// 	categories = [],

@@ -2,6 +2,7 @@ import React from 'react';
 import { Player } from '@lottiefiles/react-lottie-player';
 import Dev from '../../assets/lotties/Developer.json';
 import Waves from '../../assets/lotties/Waves.json';
+import '../Home/Home.css';
 
 function Home() {
 	return (
@@ -12,7 +13,7 @@ function Home() {
 			<h1
 				id="about"
 				className="centered"
-				style={{ paddingBottom: '150px', paddingLeft: '100px' }}
+				style={{ paddingBottom: '200px', paddingLeft: '200px' }}
 			>
 				<div class="name">Who is Nicholas Defex</div>
 
@@ -24,6 +25,8 @@ function Home() {
 							width: '70%',
 							height: '100%',
 							margin: '1',
+							paddingLeft: '400px',
+							paddingTop: '400px',
 						}}
 					/>
 				</div>

@@ -1,0 +1,15 @@
+.navActive {
+	color: var(--secondary);
+}
+
+header {
+	background: var(--dark);
+	position: sticky;
+	top: 0px;
+	z-index: 100;
+}
+
+header a {
+	color: var(--light);
+	position: sticky;
+}

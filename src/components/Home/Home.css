@@ -1,0 +1,31 @@
+.name {
+	background-color: rgba(0, 0, 0, 0.65);
+}
+
+.loading {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+}
+
+.wave {
+	width: 50%;
+	height: 100%;
+	/* justify-content: center; */
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.centered {
+	/* height: 100vh; Magic here */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

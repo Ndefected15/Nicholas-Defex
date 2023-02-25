@@ -1,4 +1,5 @@
 import React from 'react';
+import '../Modal/Modal.css';
 
 const Modal = ({ onClose, currentPhoto }) => {
 	const { name, description, category, github, deployed, index } = currentPhoto;
