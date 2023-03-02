@@ -10,25 +10,11 @@ function Home() {
 			<div className="wave" style={{ zIndex: -1 }}>
 				<Player src={Waves} autoplay loop={true} />
 			</div>
-			<h1
-				id="about"
-				className="centered"
-				style={{ paddingBottom: '200px', paddingLeft: '200px' }}
-			>
+			<h1 id="about" className="centered">
 				<div class="name">Who is Nicholas Defex</div>
 
 				<div>
-					<Player
-						src={Dev}
-						autoplay
-						style={{
-							width: '70%',
-							height: '100%',
-							margin: '1',
-							paddingLeft: '400px',
-							paddingTop: '400px',
-						}}
-					/>
+					<Player src={Dev} autoplay className="dev" />
 				</div>
 			</h1>
 			<div className="centered">

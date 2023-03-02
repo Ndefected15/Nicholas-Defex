@@ -32,9 +32,7 @@ function Nav(props) {
 			<nav>
 				<ul className="flex-row">
 					<li className={`mx-2 ${'navActive'}`}>
-						<Link to={'/'} onClick={() => this.reloadPage()}>
-							Home
-						</Link>
+						<Link to={'/'}>Home</Link>
 					</li>
 					<li className={`mx-2 ${'navActive'}`}>
 						<Link to={'/portfolio'}>Portfolio</Link>

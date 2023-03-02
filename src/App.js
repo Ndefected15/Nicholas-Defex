@@ -34,8 +34,6 @@ function App() {
 			{loading ? (
 				<div className="loading">
 					<ClipLoader
-						width={100}
-						height={100}
 						color={'#00000'}
 						loading={loading}
 						size={100}

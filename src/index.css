@@ -255,3 +255,10 @@ a {
 	margin-left: -2px;
 	margin-right: -2px;
 }
+
+@media (max-width: 414px) {
+	html,
+	body {
+		max-width: fit-content;
+	}
+}

@@ -3,17 +3,16 @@
 }
 
 .loading {
-	text-align: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
 }
 
 .wave {
-	width: 50%;
-	height: 100%;
+	width: 50vw;
+	height: 100vh;
 	/* justify-content: center; */
 	position: absolute;
 	z-index: -1;
@@ -23,9 +22,46 @@
 	margin-right: auto;
 }
 
+.dev {
+	width: 15vw;
+	height: 50vh;
+	margin: 1;
+}
+
 .centered {
 	/* height: 100vh; Magic here */
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+@media (max-width: 414px) {
+	.loading {
+		width: 100vw;
+		height: 100vh;
+	}
+
+	.dev {
+		width: 100vw;
+		height: 30vh;
+		margin: 1;
+		padding: 0 50px 0 0;
+	}
+
+	.wave {
+		width: 100vw;
+		height: 100vh;
+		/* justify-content: center; */
+		position: absolute;
+		z-index: -1;
+		left: 0;
+		right: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.name {
+		background-color: rgba(0, 0, 0, 0.65);
+		padding-left: 170px;
+	}
 }
