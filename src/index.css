@@ -5,12 +5,12 @@ main {
 }
 
 :root {
-	--primary: #9fc1db;
-	--secondary: #e5e5e5;
-	--tertiary: #7b7b7b;
-	--light: #9fc1db;
-	--dark: #1a3850;
-	--darker: #1a3850;
+	--primary: #4e6c50;
+	--secondary: #4e6c50;
+	--tertiary: #aa8b56;
+	--light: #f0ebce;
+	--dark: #395144;
+	--darker: #202d26;
 	--error: rgb(228, 46, 1);
 	--spacing-one: calc(1rem * 0.5);
 	--spacing-two: calc(1rem);
